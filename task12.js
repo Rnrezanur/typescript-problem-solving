@@ -1,18 +1,19 @@
+"use strict";
 // Aggregate Sales Data
 function aggregateSales(data) {
-    var productSales = {};
-    var totalSales = 0;
-    data.forEach(function (item) {
+    const productSales = {};
+    let totalSales = 0;
+    data.forEach(item => {
         totalSales += item.amount;
         productSales[item.product] = (productSales[item.product] || 0) + item.amount;
     });
     return {
-        totalSales: totalSales,
-        productSales: productSales
+        totalSales,
+        productSales
     };
 }
 // Example input
-var salesData = [
+const salesData = [
     { product: "A", amount: 100 },
     { product: "B", amount: 200 },
     { product: "A", amount: 50 }

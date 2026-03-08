@@ -8,9 +8,9 @@ function searchUsers(users, keyword) {
 }
 // Example input
 var users = [
-    { name: "Alice", username: "alice123", email: "alice@gmail.com" },
-    { name: "Bob", username: "bob321", email: "bob@gmail.com" },
-    { name: "Charlie", username: "charlie777", email: "charlie@gmail.com" }
+    { name: "Rezanur", username: "rezanur123", email: "rezanur@gmail.com" },
+    { name: "Bin", username: "bin321", email: "bin@gmail.com" },
+    { name: "Shamim", username: "shamim777", email: "shamim@gmail.com" }
 ];
 // Example output
-console.log(searchUsers(users, "alice"));
+console.log(searchUsers(users, "rezanur"));

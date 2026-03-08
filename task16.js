@@ -1,13 +1,14 @@
+"use strict";
 // Count Nested Comments
 function countComments(comment) {
-    var count = 1;
-    comment.replies.forEach(function (reply) {
+    let count = 1;
+    comment.replies.forEach(reply => {
         count += countComments(reply);
     });
     return count;
 }
 // Example input
-var commentData = {
+const commentData = {
     id: 1,
     replies: [
         {

@@ -15,9 +15,9 @@ function sortUsers(users: Person[]): Person[] {
 }
 
 const people: Person[] = [
-  { name: "John", age: 25 },
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 20 }
+  { name: "Rezanur", age: 25 },
+  { name: "Bin", age: 25 },
+  { name: "Shamim", age: 20 }
 ];
 
 console.log(sortUsers(people));
