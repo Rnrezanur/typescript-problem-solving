@@ -1,10 +1,9 @@
 // Rate Limiter
 
-
 function rateLimiter(limit: number, interval: number) {
   let calls: number[] = [];
 
-  return () => {
+  return function () {
     const now = Date.now();
 
     calls = calls.filter(time => now - time < interval);
@@ -17,3 +16,13 @@ function rateLimiter(limit: number, interval: number) {
     }
   };
 }
+
+// Example input
+const limitedFunction = rateLimiter(3, 1000);
+
+// Example calls
+limitedFunction();
+limitedFunction();
+limitedFunction();
+limitedFunction();
+limitedFunction();

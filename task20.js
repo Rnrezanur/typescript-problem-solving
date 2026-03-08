@@ -13,3 +13,11 @@ function rateLimiter(limit, interval) {
         }
     };
 }
+// Example input
+var limitedFunction = rateLimiter(3, 1000);
+// Example calls
+limitedFunction();
+limitedFunction();
+limitedFunction();
+limitedFunction();
+limitedFunction();
