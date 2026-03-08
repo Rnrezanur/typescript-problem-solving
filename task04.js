@@ -1,7 +1,8 @@
+"use strict";
 // Chunk an Array
 function chunkArray(arr, size) {
-    var result = [];
-    for (var i = 0; i < arr.length; i += size) {
+    const result = [];
+    for (let i = 0; i < arr.length; i += size) {
         result.push(arr.slice(i, i + size));
     }
     return result;

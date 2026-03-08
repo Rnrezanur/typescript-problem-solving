@@ -1,6 +1,8 @@
+"use strict";
+// Remove Duplicate Objects
 function removeDuplicates(items) {
-    var unique = new Map();
-    items.forEach(function (item) {
+    const unique = new Map();
+    items.forEach((item) => {
         if (!unique.has(item.id)) {
             unique.set(item.id, item);
         }
@@ -8,7 +10,7 @@ function removeDuplicates(items) {
     return Array.from(unique.values());
 }
 // Example
-var data = [
+const data = [
     { id: 1, name: "A" },
     { id: 2, name: "B" },
     { id: 1, name: "A" }
