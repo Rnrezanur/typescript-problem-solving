@@ -1,3 +1,5 @@
+// Remove Duplicate Objects
+
 interface Item {
   id: number;
   name: string;
